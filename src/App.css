@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--white);
+  color: var(--green);
+}
+nav a{
+  margin: 0 2rem;
+  color: var(--green);
+  text-decoration: none;
+}
+nav a:hover{
+  color: var(--purple);
+  font-weight: bold;
+}
+header .nav-btn{
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--green);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+.container-home-elemnts{
+  padding: 160px 0px 210px;
+  border: 3px solid black;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url("images/Background-uno.jpg");
+  background-size: cover;
+}
+.container-title-principal{
+  width: 50%;
+}
+.titulo-principal{
+  margin-left: 100px;
+  font-size: 19px;
+  font-weight: bold;
+  font-style: italic;
+}
+.buton-principal{
+   margin-left: -295px;
+   padding: 35px 65px 30px;
+   border: 1px solid var(--white);
+   border-radius: 10px;
+   color: var(--black);
+   background-color: transparent;
+  font-size: 18px;
+  margin-right: 100px;
+ }
+.buton-principal:hover{
+  border: 3px solid var(--white);
+  color: #f6b9a0;
+  cursor: pointer;
+  font-style: italic;
+}
+
+@media only  screen and (max-width: 768px){
+  header .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+  header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    background-color: var(--white);
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+  header .responsive-nav{
+    transform: none;
+  }
+
+  nav -nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  nav a{
+    font-size: 1.5rem;
+  }
+}
+
