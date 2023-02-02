@@ -1,22 +1,24 @@
 .App {
   text-align: center;
 }
+/*Header*/
 header{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: var(--white);
-  color: var(--green);
+  background-color: var(--beigeClaro);
+  color: var(--blue);
 }
+/*Navbar*/
 nav a{
   margin: 0 2rem;
-  color: var(--green);
+  color: var(--black);
   text-decoration: none;
 }
 nav a:hover{
-  color: var(--purple);
+  color: var(--blue);
   font-weight: bold;
 }
 header .nav-btn{
@@ -25,14 +27,14 @@ header .nav-btn{
   background-color: transparent;
   border: none;
   outline: none;
-  color: var(--green);
+  color: var(--black);
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
 }
+/*home*/
 .container-home-elemnts{
   padding: 160px 0px 210px;
-  border: 3px solid black;
    display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -49,9 +51,8 @@ header .nav-btn{
   font-style: italic;
 }
 .buton-principal{
-   margin-left: -295px;
    padding: 35px 65px 30px;
-   border: 1px solid var(--white);
+   border: 2px solid var(--white);
    border-radius: 10px;
    color: var(--black);
    background-color: transparent;
@@ -59,13 +60,161 @@ header .nav-btn{
   margin-right: 100px;
  }
 .buton-principal:hover{
-  border: 3px solid var(--white);
-  color: #f6b9a0;
+  border: 3px solid var(--blue);
+  color: var(--blue);
   cursor: pointer;
   font-style: italic;
 }
-
-@media only  screen and (max-width: 768px){
+/*Title*/
+.component-title{
+  padding: 20px 10px 15px;
+  background-color: var(--beigeClaro);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--blue);
+}
+.component-h1{
+  color: var(--blue);
+}
+/*Task*/
+.container-task{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--beigeClaro);
+}
+.task-row1, .task-row2{
+  margin: 15px;
+}
+.add-task{
+  margin-top: 50px;
+  padding: 10px;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  background-color: var(--white);
+}
+.task-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  margin: 5px;
+}
+.add-task  input{
+  padding: 3px;
+  margin: 3px;
+}
+.send-task{
+  padding: 10px;
+  width: 120px;
+  margin: 15px 180px 15px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  color: var(--blue);
+  background-color: var(--white);
+  font-weight: bold;
+}
+.send-task:hover{
+  color: var(--white);
+  background-color: var(--blue);
+  cursor: pointer;
+}
+.container-add-task{
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: var(--white);
+}
+.task-add-title{
+  margin: 15px;
+  color: var(--blue);
+}
+.task-table{
+  width: 100%;
+  border-top: 1px solid var(--blue);
+  text-align: center;
+}
+.tHead{
+  color: var(--blue);
+  font-weight: bold;
+}
+.edit-btn{
+  color: greenyellow;
+  cursor: pointer;
+}
+.delete-btn{
+  color: darkred;
+  cursor: pointer;
+}
+.task-comodines{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  background-color: var(--white);
+}
+.buttons-comodines{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 15px;
+}
+.button-comodin{
+  padding: 8px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  color: var(--blue);
+  background-color: var(--white);
+  width: 120px;
+  font-weight: bold;
+}
+.button-comodin:hover{
+  color: var(--white);
+  background-color: var(--blue);
+  cursor: pointer;
+}
+.date-task{
+  border: 1px solid var(--blue);
+  margin-top: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  padding: 5px;
+  background-color: var(--white);
+}
+.date-title{
+ color: var(--blue);
+  margin: 7px;
+}
+.text-center{
+  margin: 3px;
+}
+/*Responsive*/
+@media only  screen and (max-width: 950px){
+  /*Task*/
+  .container-task{
+    display: flex;
+    flex-direction: column;
+  }
+  .add-task{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    justify-content: center;
+  }
+}
+@media only  screen and (max-width: 790px){
+  /*Navbar*/
   header .nav-btn{
     visibility: visible;
     opacity: 1;
@@ -88,7 +237,6 @@ header .nav-btn{
   header .responsive-nav{
     transform: none;
   }
-
   nav -nav-close-btn{
     position: absolute;
     top: 2rem;
@@ -97,5 +245,49 @@ header .nav-btn{
   nav a{
     font-size: 1.5rem;
   }
+  /*home*/
+  .titulo-principal{
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  .buton-principal{
+    padding: 20px 40px 22px;
+    font-size: 18px;
+    margin-right: 40px;
+  }
+  /*Task*/
+  .add-task form{
+    width: 80%;
+  }
+  .add-task input{
+  padding: 0;
+    margin: 0;
+  }
 }
-
+@media only  screen and (max-width: 490px){
+  /*home*/
+  .titulo-principal{
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  .buton-principal{
+    padding: 8px 15px 9px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-top: 2pc;
+  }
+  /*Task*/
+  .add-task form{
+    width: 60%;
+  }
+  .send-task{
+    margin-left: 10px;
+  }
+  .task-table{
+    font-size: 10px;
+  }
+  .calendar-container{
+    width: 85%;
+  }
+}
