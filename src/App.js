@@ -1,6 +1,5 @@
 import './App.css';
 import 'react-calendar/dist/Calendar.css';
-import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Task from "./Components/Task";
 import Title from "./Components/Title";
