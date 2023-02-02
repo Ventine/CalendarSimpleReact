@@ -71,7 +71,7 @@ header .nav-btn{
   background-color: var(--beigeClaro);
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid var(--blue);
+  border-top: 1px solid var(--blue);
 }
 .component-h1{
   color: var(--blue);
@@ -199,6 +199,138 @@ header .nav-btn{
 .text-center{
   margin: 3px;
 }
+/*Single button*/
+.container-button{
+  background-color: var(--beigeClaro);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.button-general{
+  padding: 10px 55px 15px;
+  border: 2px solid var(--blue);
+  background-color: var(--white);
+  color: var(--blue);
+  font-size: 22px;
+  border-radius: 8px;
+  margin: 10px;
+}
+.button-general:hover{
+  border: 2px solid var(--white);
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: pointer;
+  font-style: italic;
+}
+/*schedule*/
+.container-schedule{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--beigeClaro);
+}
+.day-schedule{
+  width: 280px;
+  margin: 15px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.lunes{
+  border: 1px solid var(--lunes );
+}
+.lunes-title{
+  color: var(--lunes );
+}
+.lunes-table th{
+  color: var(--lunes );
+  font-weight: bold;
+}
+.lunes-table td{
+  text-align: center;
+  border: 1px solid var(--lunes );
+  border-radius: 6px;
+}
+.martes{
+  border: 1px solid var( --martes);
+}
+.martes-title{
+  color: var( --martes);
+}
+.martes-table th{
+  color: var( --martes);
+  font-weight: bold;
+}
+.martes-table td{
+  text-align: center;
+  border: 1px solid var( --martes);
+  border-radius: 6px;
+}
+.miercoles{
+  border: 1px solid var( --miercoles);
+}
+.miercoles-title{
+  color: var( --miercoles);
+}
+.miercoles-table th{
+  color: var( --miercoles);
+  font-weight: bold;
+}
+.miercoles-table td{
+  text-align: center;
+  border: 1px solid var( --miercoles);
+  border-radius: 6px;
+}
+.jueves{
+  border: 1px solid var( --jueves);
+}
+.jueves-title{
+  color: var( --jueves);
+}
+.jueves-table th{
+  color: var( --jueves);
+  font-weight: bold;
+}
+.jueves-table td{
+  text-align: center;
+  border: 1px solid var( --jueves);
+  border-radius: 6px;
+}
+.viernes{
+  border: 1px solid var( --viernes);
+}
+.viernes-title{
+  color: var( --viernes);
+}
+.viernes-table th{
+  color: var( --viernes);
+  font-weight: bold;
+}
+.viernes-table td{
+  text-align: center;
+  border: 1px solid var( --viernes);
+  border-radius: 6px;
+}
+.fds{
+  border: 1px solid var( --fds);
+}
+.fds-title{
+  color: var( --fds);
+}
+.fds-table th{
+  color: var( --fds);
+  font-weight: bold;
+}
+.fds-table td{
+  text-align: center;
+  border: 1px solid var( --fds);
+  border-radius: 6px;
+}
 /*Responsive*/
 @media only  screen and (max-width: 950px){
   /*Task*/
@@ -211,6 +343,13 @@ header .nav-btn{
     flex-direction: column;
   align-items: center;
     justify-content: center;
+  }
+  /*Schedule*/
+  .container-schedule{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .day-schedule{
+    margin-left: 50px;
   }
 }
 @media only  screen and (max-width: 790px){
@@ -263,6 +402,13 @@ header .nav-btn{
   padding: 0;
     margin: 0;
   }
+  /*Schedule*/
+  .container-schedule{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .day-schedule{
+    width: 75%;
+  }
 }
 @media only  screen and (max-width: 490px){
   /*home*/
@@ -289,5 +435,9 @@ header .nav-btn{
   }
   .calendar-container{
     width: 85%;
+  }
+  /*Single button*/
+  .container-button{
+    flex-direction: column;
   }
 }

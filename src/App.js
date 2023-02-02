@@ -4,6 +4,9 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Task from "./Components/Task";
 import Title from "./Components/Title";
+import Schedule from "./Components/Schedule";
+import SingleButton from "./Components/SingleButton";
+import DobleButton from "./Components/DobleButton";
 function App() {
   return (
       <div>
@@ -13,6 +16,10 @@ function App() {
                 de manera organizada aprovechando el máximo de tu tiempo." />
         <Title title="Ingresa tus tareas" />
         <Task />
+          <SingleButton />
+        <Title title="Horario generado" />
+        <Schedule />
+          <DobleButton />
       </div>
   );
 }

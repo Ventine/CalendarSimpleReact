@@ -4,6 +4,12 @@
   --black:#1e1a30;
   --blue:#256bd2;
   --beigeClaro:#fffbe9;
+  --lunes: #08a3ff;
+  --martes: #edd75f;
+  --miercoles: #a44c89;
+  --jueves: #00846a;
+  --viernes: #ffbda3;
+  --fds: #ff95d2;
 }
 /*Configuraciones general pagina*/
 *{
@@ -17,7 +23,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border: 3px solid green;
 }
 
 
