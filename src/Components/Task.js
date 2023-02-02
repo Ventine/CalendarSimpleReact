@@ -14,7 +14,7 @@ function Task(){
                         <input type="text" name="name" id="name" placeholder="Nombre de tarea" required />
                             <input type="number" name="time-execute" id="time-execute" placeholder="Tiempo de ejecución" min="30" step="30" required />
                                 <select id="priority" >
-                                    <option disabled selected>Prioridad</option>
+                                    <option disabled value="selected">Prioridad</option>
                                     <option>Alta</option>
                                     <option >Media</option>
                                     <option>Baja</option>
@@ -26,6 +26,7 @@ function Task(){
                 <div className="container-add-task">
                     <div className="task-add-title"><h1>Tareas agregadas</h1></div>
                     <table className="task-table">
+                        <thead>
                         <tr className="tHead">
                             <th>Tarea</th>
                             <th>Tiempo</th>
@@ -33,6 +34,8 @@ function Task(){
                             <th>Modificar</th>
                             <th>Eliminar</th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>Trabajar</td>
                             <td>8 horas</td>
@@ -55,6 +58,7 @@ function Task(){
                                 <AiFillDelete className="delete-btn"/>
                             </td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>

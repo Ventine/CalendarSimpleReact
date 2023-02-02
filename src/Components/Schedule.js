@@ -5,14 +5,18 @@ function Schedule(){
                 <div className="lunes-title"><h1>lunes</h1></div>
                 <div className="schedule.task">
                     <table className="lunes-table">
-                        <tr>
-                            <th>Tarea</th>
-                            <th>Tiempo estimado</th>
-                        </tr>
-                        <tr>
-                            <td>Ejercicio</td>
-                            <td>30 minutos</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Tarea</th>
+                                <th>Tiempo estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ejercicio</td>
+                                <td>30 minutos</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -20,14 +24,18 @@ function Schedule(){
                 <div className="martes-title"><h1>Martes</h1></div>
                 <div className="schedule.task">
                     <table className="martes-table">
-                        <tr>
-                            <th>Tarea</th>
-                            <th>Tiempo estimado</th>
-                        </tr>
-                        <tr>
-                            <td>Ejercicio</td>
-                            <td>30 minutos</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Tarea</th>
+                                <th>Tiempo estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ejercicio</td>
+                                <td>30 minutos</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -35,14 +43,18 @@ function Schedule(){
                 <div className="miercoles-title"><h1>Miercoles</h1></div>
                 <div className="schedule.task">
                     <table className="miercoles-table">
-                           <tr>
+                        <thead>
+                            <tr>
                                 <th>Tarea</th>
                                 <th>Tiempo estimado</th>
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
                                 <td>Ejercicio</td>
                                 <td>30 minutos</td>
                             </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -50,14 +62,18 @@ function Schedule(){
                 <div className="jueves-title"><h1>Jueves</h1></div>
                 <div className="schedule.task">
                     <table className="jueves-table">
-                        <tr>
-                            <th>Tarea</th>
-                            <th>Tiempo estimado</th>
-                        </tr>
-                        <tr>
-                            <td>Ejercicio</td>
-                            <td>30 minutos</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Tarea</th>
+                                <th>Tiempo estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ejercicio</td>
+                                <td>30 minutos</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -65,14 +81,18 @@ function Schedule(){
                 <div className="viernes-title"><h1>Viernes</h1></div>
                 <div className="schedule.task">
                     <table className="viernes-table">
-                        <tr>
-                            <th>Tarea</th>
-                            <th>Tiempo estimado</th>
-                        </tr>
-                        <tr>
-                            <td>Ejercicio</td>
-                            <td>30 minutos</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Tarea</th>
+                                <th>Tiempo estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ejercicio</td>
+                                <td>30 minutos</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
@@ -80,14 +100,18 @@ function Schedule(){
                 <div className="fds-title"><h1>Fin de semana</h1></div>
                 <div className="schedule.task">
                     <table className="fds-table">
-                        <tr>
-                            <th>Tarea</th>
-                            <th>Tiempo estimado</th>
-                        </tr>
-                        <tr>
-                            <td>Ejercicio</td>
-                            <td>30 minutos</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Tarea</th>
+                                <th>Tiempo estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ejercicio</td>
+                                <td>30 minutos</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
