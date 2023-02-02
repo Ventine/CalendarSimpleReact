@@ -6,7 +6,7 @@ function Task(){
     const [date, setDate] = useState(new Date());
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return(
-        <div className="container-task">
+        <div className="container-task" id="data">
             <div className="task-row1">
                 <div className="add-task">
                     <div className="task-title"><h1>Agregar tareas</h1></div>

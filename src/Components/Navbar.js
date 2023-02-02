@@ -8,13 +8,12 @@ function Navbar(){
         navReference.current.classList.toggle("responsive-nav")
     }
     return (
-        <header>
+        <header id="home">
             <h3>MART</h3>
             <nav ref={navReference}>
-                <a href="#" >Inicio</a>
-                <a href="#" >Ingreso de datos</a>
-                <a href="#" >Horario</a>
-                <a href="#" >Ingresar</a>
+                <a href="#data" >Ingresar datos</a>
+                <a href="#schedule" >Horario</a>
+                <a href="#sesion" >Ingresar</a>
                 <button className="nav-btn  nav-close-btn" onClick={shownavReference}>
                     <FaTimes />
                 </button>

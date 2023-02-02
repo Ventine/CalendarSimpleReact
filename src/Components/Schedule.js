@@ -1,6 +1,6 @@
 function Schedule(){
     return(
-        <div className="container-schedule">
+        <div className="container-schedule" id="schedule">
             <div className="lunes day-schedule">
                 <div className="lunes-title"><h1>lunes</h1></div>
                 <div className="schedule.task">
