@@ -10,8 +10,6 @@ import DobleButton from "./Components/DobleButton";
 function App() {
   return (
       <div>
-          {/*Insercion de componentes*/}
-        <Navbar />
         <Home tiitle="Ingresa tus tareas, dales tiempo y prioridad, ahora espera la magia, tendrás un horario elaborado para poder seguir tu día a día,
                 de manera organizada aprovechando el máximo de tu tiempo." />
         <Title title="Ingresa tus tareas" />

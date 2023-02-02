@@ -2,9 +2,8 @@ import {FaBars, FaTimes} from "react-icons/fa";
 import {useRef} from "react";
 
 function Navbar(){
-    {/*Declaramos el estado*/}
+
     const navReference = useRef();
-    {/*Funcion para abiri el nav cuando tiene un tamaño para moviles*/}
     const shownavReference = () => {
         navReference.current.classList.toggle("responsive-nav")
     }
