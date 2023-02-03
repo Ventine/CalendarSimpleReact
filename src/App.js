@@ -7,6 +7,7 @@ import Title from "./Components/Title";
 import Schedule from "./Components/Schedule";
 import SingleButton from "./Components/SingleButton";
 import DobleButton from "./Components/DobleButton";
+import Footer from "./Components/Footer";
 function App() {
   return (
       <div>
@@ -15,10 +16,11 @@ function App() {
                 de manera organizada aprovechando el máximo de tu tiempo." />
         <Title title="Ingresa tus tareas" />
         <Task />
-          <SingleButton />
+        <SingleButton />
         <Title title="Horario generado" />
         <Schedule />
-          <DobleButton />
+        <DobleButton />
+        <Footer />
       </div>
   );
 }

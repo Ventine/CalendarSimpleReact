@@ -1,5 +1,6 @@
 import {FaBars, FaTimes} from "react-icons/fa";
 import {useRef} from "react";
+import { AiOutlineUserAdd } from "react-icons/ai";
 
 function Navbar(){
 
@@ -11,12 +12,10 @@ function Navbar(){
         <header id="home">
             <h3>MART</h3>
             <nav ref={navReference}>
-                <a href="#data" >Ingresar datos</a>
-                <a href="#schedule" >Horario</a>
-                <a href="#sesion" >Ingresar</a>
                 <button className="nav-btn  nav-close-btn" onClick={shownavReference}>
                     <FaTimes />
                 </button>
+                <a href="#sesion" ><AiOutlineUserAdd />Iniciar Sesión</a>
             </nav>
             <button className="nav-btn" onClick={shownavReference}>
                 <FaBars />

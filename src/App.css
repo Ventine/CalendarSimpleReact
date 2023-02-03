@@ -5,10 +5,10 @@
 header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 80px;
   padding: 0 2rem;
-  background-color: var(--beigeClaro);
+  background-color: var(--white);
   color: var(--blue);
 }
 /*Navbar*/
@@ -16,6 +16,7 @@ nav a{
   margin: 0 2rem;
   color: var(--black);
   text-decoration: none;
+  padding-left: 35rem;
 }
 nav a:hover{
   color: var(--blue);
@@ -34,7 +35,7 @@ header .nav-btn{
 }
 /*home*/
 .container-home-elemnts{
-  padding: 160px 0px 210px;
+  padding: 180px 0px 220px;
    display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,10 +69,9 @@ header .nav-btn{
 /*Title*/
 .component-title{
   padding: 20px 10px 15px;
-  background-color: var(--beigeClaro);
+  background-color: var(--bluelight);
   display: flex;
   justify-content: center;
-  border-top: 1px solid var(--blue);
 }
 .component-h1{
   color: var(--blue);
@@ -81,7 +81,7 @@ header .nav-btn{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: var(--beigeClaro);
+  background-color: var(--white)
 }
 .task-row1, .task-row2{
   margin: 15px;
@@ -199,25 +199,25 @@ header .nav-btn{
 .text-center{
   margin: 3px;
 }
-/*Single button*/
+/*button*/
 .container-button{
-  background-color: var(--beigeClaro);
+  background-color: var(--white);
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 15px;
 }
 .button-general{
-  padding: 10px 55px 15px;
-  border: 2px solid var(--blue);
+  padding: 8px 45px 12px;
+  border: 1px solid var(--blue);
   background-color: var(--white);
   color: var(--blue);
-  font-size: 22px;
-  border-radius: 8px;
+  font-size: 21px;
+  border-radius: 7px;
   margin: 10px;
 }
 .button-general:hover{
-  border: 2px solid var(--white);
+  border: 1px solid var(--white);
   background-color: var(--blue);
   color: var(--white);
   cursor: pointer;
@@ -229,7 +229,8 @@ header .nav-btn{
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  background-color: var(--beigeClaro);
+  background-color: var(--white);
+  padding: 25px 0px 30px 20px;
 }
 .day-schedule{
   width: 280px;
@@ -331,6 +332,16 @@ header .nav-btn{
   border: 1px solid var( --fds);
   border-radius: 6px;
 }
+/*Footer*/
+.container-footer{
+  background-color: var(--bluelight);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.footer-info{
+  font-size: 18px;
+}
 /*Responsive*/
 @media only  screen and (max-width: 950px){
   /*Task*/
@@ -383,6 +394,7 @@ header .nav-btn{
   }
   nav a{
     font-size: 1.5rem;
+    padding-left: 0;
   }
   /*home*/
   .titulo-principal{
